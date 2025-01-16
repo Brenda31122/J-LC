@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "756040950361",
+    "project_id": "jlcarlitos-674af",
+    "storage_bucket": "jlcarlitos-674af.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756040950361:android:873bb6938ca28d3f30c748",
+        "android_client_info": {
+          "package_name": "com.daniel.tienda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH1oIQAK_BZTkhTHhaaSVjEp1kDu6LUIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
