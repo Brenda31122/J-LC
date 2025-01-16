@@ -5,17 +5,44 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.daniel.tienda.Cliente.Bottom_Nav_Fragments_Cliente.FragmentMisOrdenesC
+import com.daniel.tienda.Cliente.Bottom_Nav_Fragments_Cliente.FragmentTiendaC
 import com.daniel.tienda.R
+import com.daniel.tienda.databinding.ActivityMainClienteBinding
+import com.daniel.tienda.databinding.FragmentInicioCBinding
 
 class FragmentInicio_C : Fragment() {
 
+    private lateinit var binding: FragmentInicioCBinding
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inicio__c, container, false)
-    }
+        binding = FragmentInicioCBinding.inflate(inflater, container, false)
 
+        binding.bottomNavigation.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.op_tienda_c->{
+                    replaceFragment(FragmentTiendaC())
+                }
+                R.id.op_mis_ordenes_c->{
+                    replaceFragment(FragmentMisOrdenesC())
+                }
+            }
+            true
+        }
+        replaceFragment(FragmentTiendaC())
+        binding.bottomNavigation.selectedItemId = R.id.op_tienda_c
+
+        return binding.root
+    }
+    private fun replaceFragment(fragment: Fragment) {
+        parentFragmentManager
+            .beginTransaction()
+            .replace(R.id.bottomFragment,fragment)
+            .commit()
+    }
 }
+
