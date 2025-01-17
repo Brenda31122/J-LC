@@ -40,6 +40,11 @@
     <string name="txtNoCuenta">¿No tienes una cuenta?</string>
     <string name="tvRegistrarV">Registrarme</string>
 
+    <!--login de cliente-->
+    <string name="txtLoginC">Login de cliente</string>
+    <string name="btnLoginC">Ingresar</string>
+    <string name="tvRegistrarC">Registrarme</string>
+
 
     <string name="txt_bienvenida">JL CARLITOS</string>
     <!-- TODO: Remove or change this placeholder text -->
