@@ -52,6 +52,9 @@
 
     <!--Producto-->
     <string name="txtAgregarProductos">Agregar Productos</string>>
-
+     <string name="etNombresP">Nombre del Producto</string>
+    <string name="etDescripcionP">Descripcion</string>
+    <string name="Catergoria">Categoria</string>
+    <string name="etPrecioP">Precio</string>
 
 </resources>

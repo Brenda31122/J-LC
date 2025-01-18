@@ -39,7 +39,7 @@
 
             <EditText
                 android:id="@+id/etEmailV"
-                android:hint="@string/etEmailV"
+                android:hint="@string/etEmail"
                 android:drawableStart="@drawable/ico_email"
                 android:drawablePadding="10dp"
                 android:inputType="textEmailAddress"
@@ -56,7 +56,7 @@
 
             <EditText
                 android:id="@+id/etPasswordV"
-                android:hint="@string/etPasswordV"
+                android:hint="@string/etPassword"
                 android:drawableStart="@drawable/ico_password"
                 android:drawablePadding="10dp"
                 android:inputType="textPassword"
