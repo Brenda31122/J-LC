@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".Vendedor.Productos.AgregarProductoActivity">
 
-    <!--Toolbar-->
+    <!-- Toolbar -->
     <RelativeLayout
         android:id="@+id/toolbarRL"
         android:layout_width="match_parent"
@@ -19,54 +19,40 @@
             android:layout_centerInParent="true"
             android:textStyle="bold"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_alignParentBottom="true"
-            android:background="#ccc"
-            />
-
+            android:background="#ccc" />
     </RelativeLayout>
 
-    <!--IconoGrefarproducto-->
+    <!-- Icono para agregar producto -->
     <RelativeLayout
         android:id="@+id/RLimagen"
         android:layout_below="@+id/toolbarRL"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imgAgregarProducto"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/aproducto"
             android:layout_width="100dp"
-            android:layout_height="100dp"/>
-
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/aproducto" />
     </RelativeLayout>
 
-    <!--Informacion de un producto-->
-    <androidx.core.widget.NestedScrollView
+    <!-- Listar las imágenes seleccionadas en una cuadrícula -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewImagenes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/RLimagen"
         android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <!--Listar las imagenes de un producto-->
-            <androidx.recyclerview.widget.RecyclerView
-                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-
-        </RelativeLayout>
-    </androidx.core.widget.NestedScrollView>
-
-
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/item_imagenes_seleccionadas" />
 </RelativeLayout>
