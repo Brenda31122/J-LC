@@ -6,6 +6,7 @@
     <!--NavigationDrawer vemdedpr-->
     <string name="op_inicio_v">Inicio</string>
     <string name="op_mi_tienda_v">Mi tienda</string>
+    <string name="op_categorias_v">Categorias</string>
     <string name="op_resenia_v">Reseñas</string>
     <string name="op_cerrar_sesion_v">Cerrar sesión</string>
     <!--NavigationDrawer cliente-->
@@ -52,9 +53,13 @@
 
     <!--Producto-->
     <string name="txtAgregarProductos">Agregar Productos</string>>
-     <string name="etNombresP">Nombre del Producto</string>
+    <string name="etNombresP">Nombre del Producto</string>
     <string name="etDescripcionP">Descripcion</string>
     <string name="Catergoria">Categoria</string>
     <string name="etPrecioP">Precio</string>
+
+    <!--Agregar catergorias -->
+    <string name="etCatergoria">Ingrese categoria</string>
+    <string name="btnAgregarCat">Agregar Categoria</string>
 
 </resources>
