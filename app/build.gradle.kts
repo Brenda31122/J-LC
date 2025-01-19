@@ -50,6 +50,7 @@ dependencies {
     implementation(libs.firebaseAuth) /*autenticacion con firebase*/
     implementation(libs.firebaseDatabase)  /*BD  con firebase*/
     implementation(libs.imagePicker) /*Recortar una imagen*/
+    implementation(libs.glide) /*Leer imagenes*/
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
