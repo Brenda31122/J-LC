@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.lottie) /*animaciones*/
     implementation(libs.firebaseAuth) /*autenticacion con firebase*/
     implementation(libs.firebaseDatabase)  /*BD  con firebase*/
+    implementation(libs.imagePicker) /*Recortar una imagen*/
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
