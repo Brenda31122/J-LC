@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Vendedor.Nav_Fragments_Vendedor.FragmentCategoriasV">
 
    <androidx.appcompat.widget.LinearLayoutCompat
@@ -21,6 +21,8 @@
                android:id="@+id/etCategoria"
                android:hint="@string/etCatergoria"
                android:inputType="textCapWords"
+               android:drawableStart="@drawable/ico_categoria"
+               android:drawablePadding="10dp"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"/>
 
@@ -28,7 +30,15 @@
 
        <!--Agregar Categoria a la base de datos -->
 
-
+       <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnAgregarCat"
+    android:text="@string/btnAgregarCat"
+    app:cornerRadius="8dp"
+    android:textAllCaps="true"
+    android:layout_marginTop="15dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
 
 
 

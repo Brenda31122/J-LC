@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment
 import com.daniel.tienda.R
 import com.daniel.tienda.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentMisProductosV
 import com.daniel.tienda.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentOrdenesV
+import com.daniel.tienda.Vendedor.Nav_Fragments_Vendedor.FragmentCategoriasV
 import com.daniel.tienda.Vendedor.Nav_Fragments_Vendedor.FragmentMiTiendaV
 import com.daniel.tienda.Vendedor.Nav_Fragments_Vendedor.FragmentReseniasV
 import com.daniel.tienda.Vendedor.Nav_Fragments_Vendedor.FragmentinicioV
@@ -84,6 +85,9 @@ class MainActivityVendedor : AppCompatActivity(), NavigationView.OnNavigationIte
             }
             R.id.op_mi_tienda_v -> {
                 replaceFragment(FragmentMiTiendaV())
+            }
+            R.id.op_categorias_v->{
+                replaceFragment(FragmentCategoriasV())
             }
             R.id.op_resenia_v -> {
                 replaceFragment(FragmentReseniasV())
